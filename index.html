@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <button class="tab-button" id="login-btn">Log In</button>
+                <button class="tab-button" id="signup-btn">Sign Up</button>
+            </div>
+            <div class="form-content" id="login-form">
+                <h2>Log In</h2>
+                <form id="login-form-content">
+                    <label for="login-email">Email Address:</label>
+                    <input type="email" id="login-email" name="login-email" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                    <button type="submit" class="submit-button">Log In</button>
+                </form>
+            </div>
+            <div class="form-content" id="signup-form">
+                <h2>Sign Up</h2>
+                <form id="signup-form-content">
+                    <label for="signup-email">Email Address:</label>
+                    <input type="email" id="signup-email" name="signup-email" required>
+                    <span id="email-error" style="color: red; display: none;">Invalid email address</span>
+                    <label for="signup-username">Username:</label>
+                    <input type="text" id="signup-username" name="signup-username" required>
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="signup-password" required>
+                    <button type="submit" class="submit-button">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
